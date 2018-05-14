@@ -63,11 +63,15 @@ public class TestJacksonMapping {
     @Test
     public void testJsonMapping() {
         String jsonString = null;
+        String subObject = null;
         try {
             jsonString = mapper.writeValueAsString(handler);
+            subObject = mapper.writeValueAsString(handler.getMessages().get(0));
+
         } catch (JsonProcessingException e) {
             //Do nothing here
         }
         System.out.println(jsonString);
+        System.out.println(subObject);
     }
 }
