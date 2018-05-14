@@ -10,8 +10,7 @@ import static com.fasterxml.jackson.annotation.JsonSubTypes.*;
 import static com.fasterxml.jackson.annotation.JsonTypeInfo.*;
 
 @JsonTypeInfo(use = Id.NAME,
-        include = As.WRAPPER_OBJECT,
-        property = "type")
+        include = As.WRAPPER_OBJECT)
 @JsonSubTypes({
         @Type(value = SupportTicket.class),
         @Type(value = SystemMessage.class)
