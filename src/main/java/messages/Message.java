@@ -1,5 +1,6 @@
 package messages;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
@@ -8,7 +9,7 @@ import java.util.UUID;
 import static com.fasterxml.jackson.annotation.JsonSubTypes.*;
 import static com.fasterxml.jackson.annotation.JsonTypeInfo.*;
 
-@JsonTypeInfo(use = Id.CLASS,
+@JsonTypeInfo(use = Id.NAME,
         include = As.PROPERTY,
         property = "type")
 @JsonSubTypes({

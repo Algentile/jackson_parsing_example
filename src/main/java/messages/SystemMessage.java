@@ -1,5 +1,7 @@
 package messages;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.sql.Time;
 
 /**

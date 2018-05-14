@@ -1,5 +1,7 @@
 package messages;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 /**
  * Support message class to be used in a Ticketing Service
  */
