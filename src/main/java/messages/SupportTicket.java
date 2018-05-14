@@ -11,12 +11,14 @@ public class SupportTicket extends Message {
     //Name of the person the ticket is assignedTo
     private String assignedTo;
 
-    public SupportTicket(String content) {
+    public SupportTicket(String content, String contact, String assignedTo) {
         super(content);
+        this.contact = contact;
+        this.assignedTo = assignedTo;
     }
 
     public void publishMessage() {
-
+        //Do Nothing for now
     }
 
     public String getContact() {

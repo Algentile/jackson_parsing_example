@@ -12,14 +12,14 @@ public class SystemMessage extends Message {
 
     private SystemState state;
 
-    protected SystemMessage(String content) {
+    protected SystemMessage(String content, SystemState state) {
         super(content);
-        systemTime = new Time(System.currentTimeMillis());
-        state = SystemState.HEALTHY;
+        this.systemTime = new Time(System.currentTimeMillis());
+        this.state = state;
     }
 
     public void publishMessage() {
-
+        //Do Nothing for now
     }
 
     public Time getSystemTime() {
@@ -38,9 +38,5 @@ public class SystemMessage extends Message {
         this.state = state;
     }
 
-    private enum SystemState {
-        CRITICAL,
-        WARNING,
-        HEALTHY
-    }
+
 }

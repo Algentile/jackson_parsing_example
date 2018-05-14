@@ -11,7 +11,7 @@ public class MessageHandler {
     private List<Message> messages;
 
     public MessageHandler() {
-        this.messages = new ArrayList<Message>();
+        this.messages = new ArrayList<>();
     }
 
     public List<Message> getMessages() {
