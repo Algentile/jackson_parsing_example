@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.sql.Time;
 
 /**
- * System Message classe to be used in System container
+ * System Message classes to be used in System container
  * service.
  */
 public class SystemMessage extends Message {
